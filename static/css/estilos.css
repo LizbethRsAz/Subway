@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("static/imagenes/fondo.jng.jpeg" );
+}
+
+header, .main, footer{
+    width: 90%;
+    margin: 1% auto;
+}
+
+header nav {
+    background: #008C15;
+    overflow: hidden;
+}
+
+header nav ul {
+    list-style: none;
+}
+header nav ul li{
+    float: left;
+}
+header nav ul li a{
+    padding: 10px 20px;
+    display:block;
+    color:#fff ;
+    text-decoration: none;
+    
+}
+header nav ul li a:hover{
+    background: #21D63B ;
+}
+.main .articles{
+    width:68.5%;
+    margin-right: 1.5%;
+    float:left;
+}
+.main .articles article{
+    padding: 20px;
+    background: #E8E8E8 ;
+    margin-bottom: 20px;
+}
+aside{
+    width: 30%;
+    background: #E8E8E8;
+    float: left;
+    padding: 20px;
+    box-sizing:border-box;
+}
+footer{
+    background: #E8E8E8;
+    color: #000;
+    clear: both;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.main article{
+    background: #000 ;
+}
+

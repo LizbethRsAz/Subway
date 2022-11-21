@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="main">
+<h3>
+    <br>
+    <Center> <b> Agregar tu opinion</b> </Center>
+</h3>
+   <br>
+   <br>
+<form action="/opiniones_fagrega" method="post">
+          <div class="form-row">      
+      <center>
+        <div class="col-md-6">
+            <label for="pag" class="form-label">Tu opinion de la pagina:</label>
+            <input type="text" class="form-control" name="pag" id="pag" required></input>
+         </div></center>
+         
+         <center>
+         <div class="col-md-6">
+            <label for="pedido" class="form-label">Opinion de tu pedido:</label>
+            <input type="text" class="form-control" name="pedido" id="pedido" required></input>
+         </div></center>
+
+         <center>
+         <div class="col-md-6">
+            <label for="servicio" class="form-label">¿Que opina de nuestro servicio?</label>
+            <input type="text" class="form-control" name="servicio" id="servicio" required></input>
+         </div></center>
+
+      <center>
+         <div class="col-md-6">
+            <label for="menu" class="form-label">Opinion de nuestro menu:</label>
+            <input type="text" class="form-control" name="menu" id="menu" required></input>
+         </div></center>
+
+         <center>
+         <div class="col-md-6">
+            <label for="comentario" class="form-label">Deje su comentario:</label>
+            <input type="text" class="form-control" name="comentario" id="comentario" required>
+         </div></center>
+
+         <center>
+            <div class="col-md-12">
+               <span><b>Califiquenos del 1 al 5... </b></span>
+               </div>
+               <div class="col-md-12">
+               <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="calificacion" id="calificacion" value="1">
+               <label class="form-check-label" for="calificacion">1 ☹</label>
+               </div>
+               <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="calificacion" id="calificacion" value="2">
+               <label class="form-check-label" for="calificacion">2 🙁</label>
+               </div>
+               <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="calificacion" id="calificacion" value="3" >
+               <label class="form-check-label" for="calificacion">3 🤔</label>
+               </div>
+               <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="calificacion" id="calificacion" value="4" >
+               <label class="form-check-label" for="calificacion">4 🙂</label>
+               </div>
+               <div class="form-check form-check-inline">
+               <input class="form-check-input" type="radio" name="calificacion" id="calificacion" value="5">
+               <label class="form-check-label" for="calificacion">5😄</label>
+               </div>
+            </div></center>
+
+         <center>
+    <div class="col-12">
+        <button type="submit" class="btn btn-danger">Enviar</button>
+    </div></center>
+   
+</form>
+</div>
+</div>
+</section>
+</section>
+{% endblock %}

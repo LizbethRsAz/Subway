@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="main">
+   <section class="articles">
+<div class="container">
+
+<h3>
+   <CENTER> <b>Direccion </b> </CENTER>
+   <link rel="stylesheet" type="text/css" href="../static/css/estilos.css">
+</h3>
+  <br>
+<form class="row g-3"  action="/direccion_fedita/{{dat.0}}" method="post">
+   <div class="col-md-6">
+     <label for="Pais" class="form-label">Pais</label>
+    <input type="text" class="form-control" name="pais" id="pais" value="{{dat.1}}"></input>
+   </div>
+   </div>
+   <div class="col-md-6">
+      <label for="Estado" class="form-label">Estado</label>
+      <input type="text" class="form-control" name="estado" id="estado" value="{{dat.2}}"></input>
+   </div>
+   <div class="col-md-6">
+      <label for="call" class="form-label">Calle</label>
+      <input type="text" class="form-control" name="calle" id="Calle" value="{{dat.3}}"></input>
+   </div>
+   <div class="col-md-6">
+    <label for="numero" class="form-label">Codigopostal</label>
+    <input type="text" class="form-control" name="codigopostal" id="codigopostal" value="{{dat.5}}"></input>
+ </div>
+
+</div>
+   <div class="col-md-6">
+      <label for="numero" class="form-label">Numero</label>
+      <input type="text" class="form-control" name="numero" id="numero" value="{{dat.5}}"></input>
+   </div>
+   <div class="col-md-6">
+      <label for="colonia" class="form-label">Colonia</label>
+      <input type="text" class="form-control" name="colonia" id="colonia" value="{{dat.6}}"></input>
+   </div>
+<div class="col-12">
+  <button type="submit" class="btn btn-danger">Enviar</button>
+</div>
+</form>
+</div>
+</div>
+   </section>
+   </section>
+{% endblock %}

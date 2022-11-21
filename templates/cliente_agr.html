@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="main">
+   <section class="articles">
+<div class="container">
+   
+    <h3>
+    <CENTER> <b> Agregar Cliente </b> </CENTER>
+    </h3>
+    <br>
+    <center><div class="col-md-8"></div></center> 
+    <form class="row g-3" action="/cliente_fagrega" method="post">
+      <center>
+        <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="nombre" id="nombre" required></input>
+         </div></center>
+         
+         <center>
+         <div class="col-md-6">
+            <label for="apellidos" class="form-label">Apellidos</label>
+            <input type="text" class="form-control" name="apellidos" id="apellidos" required></input>
+         </div></center>
+         <center>
+         <div class="col-md-6">
+            <label for="fechanac" class="form-label">Fecha de Nacimiento</label>
+            <input type="date" class="form-control" name="fechanac" id="fechanac" required></input>
+         </div></center>
+         <center>
+         <div class="col-md-6">
+          <label for="sexo" class="form-label">Sexo</label>
+          <select name="sexo" id="sexo" class = "form-select">
+            <option value="" selected>Elige...</option>
+              <option value="Hombre">Hombre</option>
+              <option value="Mujer">Mujer</option>
+              <option value ="Indistinto">Indistinto</option>
+         </select>
+      </div></center>
+      <center>
+         <div class="col-md-6">
+            <label for="telefono" class="form-label">Telefono</label>
+            <input type="text" class="form-control" name="telefono" id="telefono" required></input>
+         </div></center>
+         <center>
+         <div class="col-md-6">
+            <label for="correo" class="form-label">Correo</label>
+            <input type="email" class="form-control" name="correo" id="correo" placeholder="nombre@ejemplo.com">
+         </div></center>
+         <center>
+    <div class="col-12">
+        <button type="submit" class="btn btn-danger">Enviar</button>
+    </div></center>
+   
+</form>
+</div>
+</div>
+</section>
+</section>
+{% endblock %}

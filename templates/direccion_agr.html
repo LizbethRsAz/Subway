@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+{% block content %}
+<section class="main">
+   <section class="articles">
+<div class="container">
+   
+    <h3>
+    <CENTER> <b> Agregar direccion </b> </CENTER>
+    </h3>
+    <br>
+    <center><div class="col-md-8"></div></center> 
+    <form class="row g-3" action="/direccion_fagrega" method="post">
+      <center>
+        <div class="col-md-6">
+            <label for="pais" class="form-label">Pais</label>
+            <input type="text" class="form-control" name="pais" id="pais" required></input>
+         </div></center>
+         
+         <center>
+         <div class="col-md-6">
+            <label for="estado" class="form-label">Estado</label>
+            <input type="text" class="form-control" name="estado" id="estado" required></input>
+         </div></center>
+         <center>
+         <div class="col-md-6">
+            <label for="call" class="form-label">Calle</label>
+            <input type="text" class="form-control" name="calle" id="calle" required></input>
+         </div></center>
+         <center>
+        
+      </div></center>
+      <center>
+         <div class="col-md-6">
+            <label for="numero" class="form-label">Numero</label>
+            <input type="number" class="form-control" name="numero" id="numero" required></input>
+         </div></center>
+         <center>
+         <div class="col-md-6">
+            <label for="colonia" class="form-label">Colonia</label>
+            <input type="text" class="form-control" name="colonia" id="colonia" required></input>
+         </div></center>
+         <center>
+            <center>
+                <div class="col-md-6">
+                   <label for="colonia" class="form-label">Codigo Postal</label>
+                   <input type="number" class="form-control" name="codigopostal" id="codigopostal" required></input>
+                </div></center>
+                <center>
+    <div class="col-12">
+        <button type="submit" class="btn btn-danger">Enviar</button>
+    </div></center>
+   
+</form>
+</div>
+</div>
+</section>
+</section>
+{% endblock %}

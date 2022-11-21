@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <br>
+    <center><h1><strong>Opiniones</strong></h1></center>
+<center><table width="80%" border="0" cellpadding="2%"></table></center>
+
+        <tr>
+            <td>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="table-dark" scope="col">Opinion</th>
+                            <td class="table-dark"></td>
+                            <td class="table-dark"><center><a class="btn btn-info" href="/opiniones_agregar" role="button">Agregar tu opinion</a></center></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <table class="table table-striped table-info">
+                        {% for i in opiniones %}
+                            <tr>
+                                <td width="60%">{{i.1}}</td>
+                                <td width="20%"><center><a class="btn btn-outline-info" href="/opiniones_borrar/{{i.0}}" role="button">Borrar</a></center></td>
+
+                            </tr>
+                        {% endfor %}
+                    </table>
+                    </tbody>
+
+                </table>
+
+            </td>
+        </tr>
+    </table>
+</body>
+</div>
+{% endblock %}

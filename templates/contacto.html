@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+{% block content %}
+</header>
+<section class="main">
+        <section class="articles">
+            <article>
+                <img src="static/imagenes/Contacto1.jng.jpg"  width="780px" height="305px">
+                <br>
+                <img src="static/imagenes/Contacto2.jng.jpg"  width="780px" height="305px">
+            </article>
+        </section>
+        <aside>
+            <center><h1><strong>Direccion</strong></h1></center>
+<center><table width="80%" border="0" cellpadding="2%"></table></center>
+        <tr>
+            <td>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="table-dark" scope="col" >Direccion</th>
+                            <td class="table-dark"></td>
+                            <td class="table-dark"><center><a class="btn btn-info" href="/direccion_agregar" role="button">Agregar</a></center></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <table class="table table-striped table-info">
+                        {% for i in direccion %}
+                            <tr>
+                                <td width="60%">{{i.1}}</td>
+                                <td width="20%"><center><a class="btn btn-info" href="/direccion_editar/{{i.0}}" role="button">Editar</a></center></td>
+                                <td width="20%"><center><a class="btn btn-outline-info" href="/direccion_borrar/{{i.0}}" role="button">Borrar</a></center></td>
+                            </tr>
+                        {% endfor %}
+                        
+        </aside>
+</section>
+   
+    </footer>
+{% endblock %}
+
+
